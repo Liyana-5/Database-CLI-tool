@@ -1,8 +1,8 @@
 import argparse
 import os 
-from create import DBcreator
-from load import DBloader
-from query import DBquery
+from scripts.create import DBcreator
+from scripts.load import DBloader
+from scripts.query import DBquery
 
 #use agparser for commandline arguments 
 def main():
@@ -15,11 +15,11 @@ def main():
     
     #create a list of files for lodaing database 
     files = [
-        "Subject_example.csv",
-        "HMP_transcriptome_abundance_example.tsv",
-        "HMP_proteome_abundance_example.tsv",
-        "HMP_metabolome_abundance_example.tsv",
-        "HMP_metabolome_annotation_example.csv"
+        "data/Subject_example.csv",
+        "data/HMP_transcriptome_abundance_example.tsv",
+        "data/HMP_proteome_abundance_example.tsv",
+        "data/HMP_metabolome_abundance_example.tsv",
+        "data/HMP_metabolome_annotation_example.csv"
     ]
 
     #check if datafiles in the list for loading datas are inside the directory or not 
