@@ -1,0 +1,57 @@
+name: Bioinformatics Database CI
+
+on:
+  push:
+    branches: [ main, refactor-main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout the repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # 2. Set up Python environment
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    # 3. Install dependencies
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    # 4. Ensure results folder exists
+    - name: Create results folder
+      run: mkdir -p results
+
+    # 5. Run database creation
+    - name: Create database
+      run: python main.py --createdb test_ci.db
+
+    # 6. Load data into the database
+    - name: Load data
+      run: python main.py --loaddb test_ci.db
+
+    # 7. Run all queries 1-9
+    - name: Run queries
+      run: |
+        for i in {1..9}; do
+          python main.py --querydb $i test_ci.db
+        done
+
+    # 8. Verify that the scatter plot for query 9 exists
+    - name: Verify scatter plot
+      run: test -f results/age_bmi_scatterplot.png
+
+    # 9. Cleanup test database and generated plot
+    - name: Cleanup
+      run: |
+        rm -f test_ci.db
+        rm -f results/age_bmi_scatterplot.png
