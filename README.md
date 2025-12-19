@@ -51,7 +51,7 @@ Database-CLI-tool/
    Loads example CSV/TSV files into the database. Includes parsing, cleaning, and handling missing values.
 
 3. **Data Querying (`--querydb`)**  
-   Executes predefined queries. Query #9, for example, generates a scatter plot of Age vs BMI and saves it in the `results/` folder.
+   Executes predefined queries. Query #9, for example, generates a scatter plot of Age vs BMI and saves it in the `result/` folder.
 
 ---
 
