@@ -1,0 +1,31 @@
+PeakID,Metabolite,KEGG,HMDB,Chemical Class,Pathway
+nHILIC_103.0036_4,C3H4O4,,,,
+nHILIC_103.0036_7.7,C5H8O6,,,,
+nHILIC_103.0399_5.4,Hydroxybutyric acid(2),,,Amino Acid,Glutathione Metabolism
+nHILIC_103.04_4.6,Hydroxybutyric acid(1),,,Amino Acid,Glutathione Metabolism
+nHILIC_104.0352_9.7,L-Serine,C00065,HMDB00187,Amino Acid,Glycine- Serine and Threonine Metabolism
+nHILIC_105.0192_7.8,Glyceric acid,C00258,HMDB00139,Carbohydrate,Glycolysis- Gluconeogenesis- and Pyruvate Metabolism
+nHILIC_111.0199_3.4,Uracil,C00106,HMDB00300,Nucleotide,Pyrimidine Metabolism- Uracil containing
+nHILIC_114.0559_7.8,L-Proline,C00148,HMDB00162,Amino Acid,Urea cycle; Arginine and Proline Metabolism
+nHILIC_115.0399_2,Alpha-ketoisovaleric acid,C00141,HMDB00019,Amino Acid,Leucine- Isoleucine and Valine Metabolism
+nHILIC_116.0352_7.5,C4H7NO3,,,,
+nHILIC_116.0716_7.3,L-Valine,C00183,HMDB00883,Amino Acid,Leucine- Isoleucine and Valine Metabolism
+nHILIC_118.0509_8.9,L-Threonine,C00188,HMDB00167,Amino Acid,Glycine- Serine and Threonine Metabolism
+nHILIC_119.0349_5.7,C4H8O4,,,,
+nHILIC_120.0124_7.6,L-Cysteine,C00097,HMDB00574,Amino Acid,Methionine- Cysteine- SAM and Taurine Metabolism
+nHILIC_121.0505_3.5,Erythritol|D-Threitol,C00503|C16884,HMDB02994|HMDB04136,Xenobiotics,Food Component/Plant
+nHILIC_124.0073_8.7,Taurine,C00245,HMDB00251,Amino Acid,Methionine- Cysteine- SAM and Taurine Metabolism
+nHILIC_128.0352_7.6,5-oxoproline,C01879,HMDB00267,Amino Acid,Glutathione Metabolism
+nHILIC_129.0192_7.6,C5H6O4,,,,
+nHILIC_130.0509_8.8,4-Hydroxyproline,C01157,HMDB00725,Amino Acid,Urea cycle; Arginine and Proline Metabolism
+nHILIC_130.0872_6.3,L-Isoleucine|L-Leucine,C00407|C00123,HMDB00172|HMDB00687,Amino Acid,Leucine- Isoleucine and Valine Metabolism
+nHILIC_131.0349_5.1,Ethylmalonate,,HMDB00622,Amino Acid,Leucine- Isoleucine and Valine Metabolism
+nHILIC_131.0461_9.7,L-Asparagine,C00152,HMDB00168,Amino Acid,Alanine and Aspartate Metabolism
+nHILIC_132.0302_8.3,Iminodiacetate (IDA),C19911,HMDB11753,Xenobiotics,Chemical
+nHILIC_133.0142_10.4,L-Malic acid,C00149,HMDB00156,Energy,TCA Cycle
+nHILIC_133.0506_2.3,2-3-Dihydroxyvaleric acid(2),C04039,HMDB00421,Cofactors and Vitamins,Pantothenate and CoA Metabolism
+nHILIC_133.0506_4.4,2-3-Dihydroxyvaleric acid(1),C04039,HMDB00421,Cofactors and Vitamins,Pantothenate and CoA Metabolism
+nHILIC_135.0299_7.9,Threonic acid,C01620,HMDB00943,Cofactors and Vitamins,Ascorbate and Aldarate Metabolism
+nHILIC_137.0243_1,Hydroxybenzoic acid,,,Xenobiotics,Benzoate Metabolism
+nHILIC_144.0302_7.2,C5H7NO4,,,,
+nHILIC_144.0666_5.1,C6H11NO3,,,,
