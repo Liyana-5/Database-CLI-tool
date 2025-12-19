@@ -1,6 +1,6 @@
 import sqlite3
 import matplotlib.pyplot as plt
-
+import os
 class DBquery:
     def __init__(self, db_file):
         self.db_file = db_file
@@ -103,6 +103,12 @@ class DBquery:
         plt.xlabel('Age')
         plt.ylabel('BMI')
         plt.grid(True)
+        
+        os.makedirs('result', exist_ok=True)
+
+        # Save figure inside result folder
+        plt.savefig('result/age_bmi_scatterplot.png')
+   
         #save figure to directory
         plt.savefig('age_bmi_scatterplot.png')
         #close plot
