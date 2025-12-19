@@ -1,7 +1,21 @@
 # Bioinformatics Database CLI Tool
 
-A **command-line Python tool** for creating, loading, and querying a biological SQLite database.  
-This project uses example datasets for demonstration and produces visual outputs such as scatter plots.
+A **command-line Python tool** for creating, loading, and querying a bioinformatic SQLite database using multi-omics data.  
+This utility allows users to store transcriptomics, proteomics, and metabolomics data in a structured database, and query it to extract specific insights. It also generates visual outputs such as scatter plots.
+
+---
+
+## Project Overview
+
+This project implements a **bioinformatics database utility** to:
+
+- Create a SQLite database based on a predefined schema.
+- Load data from CSV and TSV files into the database.
+- Execute predefined queries to fetch data and generate visualizations.
+
+The data used in this project is from the multi-omics study "Personal Aging Markers and Ageotypes Revealed by Deep Longitudinal Profiling" (Ahadi et al., 2020). The project focuses on a subset of data required to demonstrate database operations.
+
+---
 
 ## Folder Structure
 ```
@@ -25,6 +39,22 @@ Database-CLI-tool/
 - The `data/` folder contains **small example datasets** to demonstrate functionality.  
 - **Full datasets** are not included for size/privacy reasons.  
 - Users can place real datasets in `data/` locally.
+
+---
+
+## Features
+
+1. **Database Creation (`--createdb`)**  
+   Creates an SQLite database with tables for Subjects, Visits, Transcriptomics, Metabolomics, and Metabolite Annotations based on `Assessment2.sql`.
+
+2. **Data Loading (`--loaddb`)**  
+   Loads example CSV/TSV files into the database. Includes parsing, cleaning, and handling missing values.
+
+3. **Data Querying (`--querydb`)**  
+   Executes predefined queries. Query #9, for example, generates a scatter plot of Age vs BMI and saves it in the `results/` folder.
+
+---
+
 
 ## How to Run
 
@@ -57,3 +87,21 @@ This will generate a scatter plot of age vs BMI in the results/ folder.
   * pandas
 
   * matplotlib
+
+  install dependencies using
+  ```bash
+    pip install -r requirements.txt
+  ```
+
+---
+## Notes
+
+- The database uses a wide format for omics data to match the structure of input files.
+
+- Only the columns necessary for the queries are included in the database schema.
+
+- The program is modular: separate scripts handle creation, loading, and querying.
+
+- All example files should be located in the data/ folder. Real datasets can be added locally.
+
+---
