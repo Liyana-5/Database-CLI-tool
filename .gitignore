@@ -4,3 +4,4 @@ __pycache__/
 .env
 .vscode/
 *.png
+!result/age_bmi_scatterplot.png
