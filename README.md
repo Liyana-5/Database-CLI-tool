@@ -45,10 +45,12 @@ Database-CLI-tool/
 ## Features
 
 1. **Database Creation (`--createdb`)**  
-   Creates an SQLite database with tables for Subjects, Visits, Transcriptomics, Metabolomics, and Metabolite Annotations based on `Assessment2.sql`.
+   Creates an SQLite database with tables for Subjects, Visits, Transcriptomics, Metabolomics, and Metabolite Annotations based on `transcriptomics_schema.sql`.
+ **Note:** Only the columns and data needed to answer the predefined queries are populated in the database.
 
 2. **Data Loading (`--loaddb`)**  
    Loads example CSV/TSV files into the database. Includes parsing, cleaning, and handling missing values.
+**Note:** Only the required data for the queries is inserted.
 
 3. **Data Querying (`--querydb`)**  
    Executes predefined queries. Query #9, for example, generates a scatter plot of Age vs BMI and saves it in the `result/` folder.
