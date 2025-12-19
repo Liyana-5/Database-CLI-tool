@@ -48,7 +48,7 @@ jobs:
 
     # 8. Verify that the scatter plot for query 9 exists
     - name: Verify scatter plot
-      run: test -f results/age_bmi_scatterplot.png
+      run: test -f result/age_bmi_scatterplot.png
 
     # 9. Cleanup test database and generated plot
     - name: Cleanup
