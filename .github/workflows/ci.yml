@@ -27,9 +27,9 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    # 4. Ensure results folder exists
-    - name: Create results folder
-      run: mkdir -p results
+    # 4. Ensure result folder exists
+    - name: Create result folder
+      run: mkdir -p result
 
     # 5. Run database creation
     - name: Create database
