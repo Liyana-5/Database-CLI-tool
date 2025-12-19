@@ -1,5 +1,5 @@
 import sqlite3
-
+import os
 #Define class for creating database
 class DBcreator:
     #method toinitialise the database with path to sql file 
@@ -7,7 +7,8 @@ class DBcreator:
         self.db_file = db_file
     #method to create database from your specific sql file stored in directory 
     def create_database( self):
-            sql_file = 'transcriptomics_schema.sql'  # The SQL script to create the schema
+            sql_file = os.path.join('schema', 'transcriptomics_schema.sql')
+          # The SQL script to create the schema
         
             # Establishing connection to the SQLite database
             conn = sqlite3.connect(self.db_file)
